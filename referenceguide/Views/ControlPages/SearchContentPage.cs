@@ -34,13 +34,13 @@ namespace referenceguide
                         VM.SearchCommand.Execute(searchBar.Text);
                     })
                 };
-                Content = new CompressedStackLayout()
+                Content = new StackContainer(true)
 				{
 					Children = { searchBar, lstPeople }
 				};
             }
             else{
-                Content = new CompressedStackLayout()
+                Content = new StackContainer(true)
 				{
 					Children = { lstPeople }
 				};

@@ -14,7 +14,7 @@ namespace referenceguide
             };
             lbl.SetBinding(Label.TextProperty, "ErrorType");
 
-            View = new CompressedStackLayout()
+            View = new StackContainer(true)
             {
                 Children = { lbl }
             };
@@ -58,7 +58,7 @@ namespace referenceguide
             };
             btnClear.SetBinding(CoreButton.CommandProperty,"ClearErrorEntries");
            
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,

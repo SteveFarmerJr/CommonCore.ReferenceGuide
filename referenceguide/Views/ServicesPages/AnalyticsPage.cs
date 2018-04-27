@@ -14,7 +14,7 @@ namespace referenceguide
 			};
 			lbl.SetBinding(Label.TextProperty, "ViewName");
 
-            View = new CompressedStackLayout()
+            View = new StackContainer(true)
 			{
 				Children = { lbl }
 			};
@@ -44,7 +44,7 @@ namespace referenceguide
 			};
 			btnClear.SetBinding(CoreButton.CommandProperty, "ClearAnalyticEntries");
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
 			{
                 Padding = 20,
                 Spacing = 10,

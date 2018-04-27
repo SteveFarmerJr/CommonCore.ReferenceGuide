@@ -83,7 +83,7 @@ namespace referenceguide
             }
 
 
-            View = new CompressedStackLayout()
+            View = new StackContainer(true)
             {
                 Children = { lbl }
             };
@@ -116,7 +116,7 @@ namespace referenceguide
             };
             lst.SetBinding(ListView.ItemsSourceProperty,"Names");
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Children = { lst }
             };

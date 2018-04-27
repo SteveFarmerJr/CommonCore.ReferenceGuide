@@ -1,6 +1,7 @@
 ﻿using System;
 using FFImageLoading.Forms;
 using Xamarin.Forms;
+using Xamarin.Forms.CommonCore;
 
 namespace referenceguide
 {
@@ -20,7 +21,7 @@ namespace referenceguide
 			};
             img.SetBinding(CachedImage.SourceProperty,"ImageUrl");
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Children = { img }
             };

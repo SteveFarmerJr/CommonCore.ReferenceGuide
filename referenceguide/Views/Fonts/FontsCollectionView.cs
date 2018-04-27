@@ -27,7 +27,7 @@ namespace referenceguide
             };
             descript.SetBinding(Label.TextProperty, "FriendlyName");
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Spacing = 5,
                 Children = { imgLabel, descript }
@@ -45,7 +45,7 @@ namespace referenceguide
         public FontsCollectionViewCell()
         {
             Height = 75;
-            var gd = new CompressedGrid();
+            var gd = new GridContainer(true);
             gd.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1,GridUnitType.Star)});
             gd.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
             gd.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });

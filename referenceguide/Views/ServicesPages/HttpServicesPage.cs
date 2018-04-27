@@ -26,7 +26,7 @@ namespace referenceguide
             lstView.SetBinding(CoreListView.ItemsSourceProperty, "RandomUsers");
 
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Children = { lstView }
             };

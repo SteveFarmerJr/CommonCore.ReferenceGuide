@@ -106,7 +106,7 @@ namespace referenceguide
                })
             };
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,

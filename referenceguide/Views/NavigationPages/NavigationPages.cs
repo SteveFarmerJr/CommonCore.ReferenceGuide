@@ -27,7 +27,7 @@ namespace referenceguide
                })
             };
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,
@@ -81,7 +81,7 @@ namespace referenceguide
                })
             };
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,
@@ -141,7 +141,7 @@ namespace referenceguide
                })
             };
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,
@@ -230,7 +230,7 @@ namespace referenceguide
             };
             lbl.SetBinding(Label.TextProperty, "AnimalDescription");
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,

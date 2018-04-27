@@ -101,7 +101,7 @@ namespace referenceguide
             btnCallEvent.SetBinding(CoreButton.CommandProperty, "MakeCallEvent");
 
             this.SetAutomationIds();
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 15,
                 Children = { lbl, phoneNum, lblEmail, emailAddr, lblMsg, message, btnSMS, btnEmail, btnCall, btnCallEvent }

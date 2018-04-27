@@ -43,7 +43,7 @@ namespace referenceguide
 				})
 			};
 
-            var stack = new CompressedStackLayout()
+            var stack = new StackContainer(true)
 			{
 				Padding = 20,
 				Spacing = 10,

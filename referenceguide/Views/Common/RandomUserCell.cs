@@ -64,7 +64,7 @@ namespace referenceguide
 				})
 			});
 
-            View = new CompressedStackLayout()
+            View = new StackContainer(true)
 			{
 				Orientation = StackOrientation.Horizontal,
 				Children = { img, rightPanel }

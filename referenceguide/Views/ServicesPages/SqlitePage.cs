@@ -76,7 +76,7 @@ namespace referenceguide
             deleteMenu.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
             ContextActions.Add(deleteMenu);
 
-            View = new CompressedStackLayout()
+            View = new StackContainer(true)
             {
                 Orientation = StackOrientation.Horizontal,
                 Children = { img, rightPanel }
@@ -119,7 +119,7 @@ namespace referenceguide
             lstView.SetBinding(ListView.ItemsSourceProperty, "Appointments");
 
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Children = { lstView }
             };

@@ -32,7 +32,7 @@ namespace referenceguide
             };
 
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Children = { frame }
             };

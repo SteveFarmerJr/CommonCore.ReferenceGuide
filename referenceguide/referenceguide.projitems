@@ -66,7 +66,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Business\WebBusinessLayer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\FontItemRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\AppConverters.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)_roadmap\CompressedContainers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\ControlPages\CardViewPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\CardViewContent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\LocalizationPages\LocalizationMain.cs" />
@@ -89,7 +88,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Business\" />
     <Folder Include="$(MSBuildThisFileDirectory)Partials\" />
     <Folder Include="$(MSBuildThisFileDirectory)Converters\" />
-    <Folder Include="$(MSBuildThisFileDirectory)_roadmap\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\LocalizationPages\" />
     <Folder Include="$(MSBuildThisFileDirectory)Config\lang\" />
     <Folder Include="$(MSBuildThisFileDirectory)Config\settings\" />

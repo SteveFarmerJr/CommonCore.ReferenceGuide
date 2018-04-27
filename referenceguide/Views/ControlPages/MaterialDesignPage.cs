@@ -42,7 +42,7 @@ namespace referenceguide
 			};
 
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
 			{
 				Padding = new Thickness(20, 30, 20, 20),
 				Spacing = CoreSettings.On<double>(40,5,5),

@@ -38,7 +38,7 @@ namespace referenceguide
 			var lblToken = new Label();
 			lblToken.SetBinding(Label.TextProperty, "AccessToken");
 
-            var stack = new CompressedStackLayout()
+            var stack = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,

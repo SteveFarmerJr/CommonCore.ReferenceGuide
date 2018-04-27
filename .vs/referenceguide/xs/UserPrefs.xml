@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{91806BB2-2DAB-4899-B281-9B953904B733}|Default">
   <MonoDevelop.Ide.ItemProperties.referenceguide.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.11E980B5-2AC0-4C25-BBCE-58E696C69621" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainApplication.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="referenceguide/Views/EffectsPages/EffectsMain.cs">
     <Files>
-      <File FileName="../CommonCore/CommonCore Extensions/Xamarin.Forms.CommonCore.Localization/Services/LocalizationService.cs" Line="70" Column="49" />
-      <File FileName="referenceguide/Views/LocalizationPages/LocalizationMain.cs" Line="7" Column="52" />
-      <File FileName="referenceguide/ViewModels/LocalizationViewModel.cs" Line="26" Column="14" />
-      <File FileName="../CommonCore/Xamarin.Forms.CommonCore/Settings/CoreSettings.cs" Line="24" Column="38" />
-      <File FileName="referenceguide/referenceguide.cs" Line="11" Column="36" />
-      <File FileName="../CommonCore/Xamarin.Forms.CommonCore/IOC/CoreDependencyService.cs" Line="7" Column="18" />
-      <File FileName="../CommonCore/Xamarin.Forms.CommonCore/Extensions/CoreExtensions.cs" Line="19" Column="26" />
-      <File FileName="Droid/MainApplication.cs" Line="140" Column="15" />
+      <File FileName="referenceguide/Views/ServicesPages/EncryptionPage.cs" Line="87" Column="39" />
+      <File FileName="referenceguide/Views/ControlPages/SearchContentPage.cs" Line="41" Column="14" />
+      <File FileName="referenceguide/Views/DependencyPages/DependeciesMain.cs" Line="112" Column="13" />
+      <File FileName="referenceguide/Views/EffectsPages/WebViewEffect.cs" Line="24" Column="12" />
+      <File FileName="referenceguide/Views/EffectsPages/ListViewEffect.cs" Line="46" Column="13" />
+      <File FileName="referenceguide/Views/EffectsPages/EffectsMain.cs" Line="42" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

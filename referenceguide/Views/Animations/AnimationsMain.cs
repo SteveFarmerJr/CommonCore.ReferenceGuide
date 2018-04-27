@@ -155,7 +155,7 @@ namespace referenceguide
             var dataTrigger = CreateDataTrigger();
 
 
-            var container = new CompressedStackLayout()
+            var container = new StackContainer(true)
 			{
 	
                 Padding = 20,
@@ -183,7 +183,7 @@ namespace referenceguide
         }
 
 
-        public CompressedGrid CreateAnimation(string buttonText, Color boxColor, CoreTriggerAction animation)
+        public GridContainer CreateAnimation(string buttonText, Color boxColor, CoreTriggerAction animation)
         {
             var box = new BoxView()
             {
@@ -207,14 +207,14 @@ namespace referenceguide
                 Triggers = { trigger }
             };
 
-            var grid = new CompressedGrid();
+            var grid = new GridContainer(true);
 
             grid.AddChild(box, 0, 0);
             grid.AddChild(btn, 0, 1);
             return grid;
         }
 
-        public CompressedGrid CreateDataTrigger()
+        public GridContainer CreateDataTrigger()
 		{
 			var box = new BoxView()
 			{
@@ -249,7 +249,7 @@ namespace referenceguide
 			};
             btn.SetBinding(CoreButton.CommandProperty,"ClickEvent");
 
-            var grid = new CompressedGrid();
+            var grid = new GridContainer(true);
 
 			grid.AddChild(box, 0, 0);
 			grid.AddChild(btn, 0, 1);

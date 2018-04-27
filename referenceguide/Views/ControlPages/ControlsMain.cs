@@ -36,7 +36,7 @@ namespace referenceguide
             };
             lstView.SetBinding(CoreListView.ItemsSourceProperty,"States");
 
-            var placeholder = new CompressedStackLayout() { 
+            var placeholder = new StackContainer(true) { 
                 HorizontalOptions = LayoutOptions.StartAndExpand
             };
 			var btn = new Button()
@@ -50,7 +50,7 @@ namespace referenceguide
 				})
 			};
 
-            var bottom = new CompressedStackLayout()
+            var bottom = new StackContainer(true)
             { 
                 Orientation= StackOrientation.Horizontal,
                 Children = { placeholder, btn }
@@ -58,7 +58,7 @@ namespace referenceguide
 
 
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Children = { top, lstView, bottom }
             };
@@ -144,7 +144,7 @@ namespace referenceguide
                 })
             };
 
-            var pnl = new CompressedStackLayout()
+            var pnl = new StackContainer(true)
             {
                 Orientation = StackOrientation.Horizontal,
                 Spacing = 10,

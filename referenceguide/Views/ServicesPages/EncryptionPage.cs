@@ -89,7 +89,7 @@ namespace referenceguide
             };
             hashMatch.SetBinding(Label.TextProperty, "HashMatchMessage");
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 15,
                 Children = { lbl, clearEntry, encryptedLabel, btnEncrypt, md5Label1, clearHash1, md5Label2, clearHash2, btnHash, hashMatch }

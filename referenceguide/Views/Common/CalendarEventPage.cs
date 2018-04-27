@@ -3,6 +3,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using Xamarin.Forms;
 using Xamarin.Forms.CommonCore;
+using Xamarin.Forms.CommonCore.Controls;
 
 namespace referenceguide
 {
@@ -83,7 +84,7 @@ namespace referenceguide
             };
             btnCreate.SetBinding(CoreButton.CommandProperty, "CreateEvent");
 
-            Content = new CompressedStackLayout()
+            Content = new StackContainer(true)
             {
                 Padding = 15,
                 Children = 
@@ -112,7 +113,7 @@ namespace referenceguide
             return body.Member.Name;
         }
 
-        private CompressedStackLayout CreateCalendarSelectionPanel()
+        private StackContainer CreateCalendarSelectionPanel()
         {
             var calendarSelect = new Label()
             {
@@ -132,13 +133,13 @@ namespace referenceguide
             calendarPicker.SetBinding(CorePicker.ItemsSourceProperty, "DeviceCalendars");
             calendarPicker.SetBinding(CorePicker.SelectedItemProperty,"SelectedDeviceCalendar");
 
-            return new CompressedStackLayout()
+            return new StackContainer(true)
             {
                 Children = { calendarSelect, calendarPicker }
             };
         }
 
-        private CompressedStackLayout CreateStartDateTimePanel()
+        private StackContainer CreateStartDateTimePanel()
         {
             var evtStartDate = new Label()
             {
@@ -181,7 +182,7 @@ namespace referenceguide
                 Children = { evtStartTime, evtStartTimeEntry }
             };
 
-            var startDateTimePanel = new CompressedStackLayout()
+            var startDateTimePanel = new StackContainer(true)
             {
                 Orientation = StackOrientation.Horizontal,
                 Children = { startDatePanel, startTimePanel }
@@ -191,7 +192,7 @@ namespace referenceguide
         }
 
 
-        private CompressedStackLayout CreateEndDateTimePanel()
+        private StackContainer CreateEndDateTimePanel()
         {
             var evtEndDate = new Label()
             {
@@ -233,7 +234,7 @@ namespace referenceguide
                 Children = { evtEndTime, evtEndTimeEntry }
             };
 
-            var endDateTimePanel = new CompressedStackLayout()
+            var endDateTimePanel = new StackContainer(true)
             {
                 Orientation = StackOrientation.Horizontal,
                 Children = { endDatePanel, endTimePanel }

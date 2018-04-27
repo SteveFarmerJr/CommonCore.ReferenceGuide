@@ -90,7 +90,7 @@ namespace referenceguide
             timerSrv.SetBinding(CoreButton.TextProperty,"BackgroundButtonTitle");
             timerSrv.SetBinding(CoreButton.CommandProperty,"StartBackgrounding");
 
-            var stack = new CompressedStackLayout()
+            var stack = new StackContainer(true)
             {
                 Padding = 20,
                 Spacing = 10,

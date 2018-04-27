@@ -43,7 +43,7 @@ namespace referenceguide
 
             Content = new Xamarin.Forms.ScrollView()
             {
-                Content = new CompressedStackLayout()
+                Content = new StackContainer(true)
                 {
                     Children =
                     {
